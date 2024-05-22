@@ -1,40 +1,73 @@
 package class3;
 
-public class person {
+public class person{
     String name;
-    
-    String schoolName = "Bingham University";
+    String schoolName;
 
-    private String password;
-
-    private String matric_no;
-
-    person(){
-        System.out.println("objected created");
+    public person() {
+        System.out.println("person object created");
     }
 
 
-    //public person();
+    class Student extends person {
+        private String matricNumber;
+        private String password;
+      
+        public Student(String name, String schoolName, String matricNumber, String password) {
+          //super(name, schoolName);
+          this.matricNumber = matricNumber;
+          this.password = password;
+        }
 
-    // Methods
-    
-    String getName(){
-    return name;
-   }
+        public String getPass() {
+            return password;
+        }
 
-   
+        public String getMatric() {
+            return matricNumber;
+        }
 
-    String getPass(){
-        return password;
-    }
 
-    void setName(String name){
-        this.name = name;
-    }
-    void SetPass(String password){
-    this.password = password;
-    }
-       
-    
-    
+        public String getName() {
+        return name;
+        }
+
+
+        public void setMatric(String matricNumber) {
+            this.matricNumber = matricNumber;
+        }
+        
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setPass(String password) {
+            this.password = password;
+        }
+
+
+    class Staff extends person {
+        private int staffNumber;
+        private String password;
+      
+        public Staff(String name, String schoolName, int staffNumber, String password) {
+          //super(name, schoolName);
+          this.staffNumber = staffNumber;
+          this.password = password;
+        }
+
+        public String getName(){
+        return name;
+        }
+
+        public String getPass(){
+            return password;
+        }
+      
+        public int getStaffNumber(){  
+          return staffNumber;
+        }
+      }
+    } 
+
 }

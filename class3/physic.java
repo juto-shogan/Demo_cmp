@@ -1,13 +1,12 @@
-package class3;
+package class3; 
 
 public class physic {
 
-    float calculateVelocity(float distance, int time){
-        return distance/time;
-    
+    float calculateVelocity(double distance, int time) {
+        return (float) (distance / time);
     }
-    
-    float calculateVelocity1(float initialVelocity, float acceleration, int time){
-        return initialVelocity + (acceleration*time);
+
+    float calculateVelocity1(double initialVelocity, double acceleration, int time) {
+        return (float) (initialVelocity + (acceleration * time)); 
     }
 }
