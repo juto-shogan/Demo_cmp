@@ -14,7 +14,7 @@ public class person{
         private String password;
       
         public Student(String name, String schoolName, String matricNumber, String password) {
-          //super(name, schoolName);
+          super(name, schoolName);
           this.matricNumber = matricNumber;
           this.password = password;
         }
@@ -51,7 +51,7 @@ public class person{
         private String password;
       
         public Staff(String name, String schoolName, int staffNumber, String password) {
-          //super(name, schoolName);
+          super(name, schoolName);
           this.staffNumber = staffNumber;
           this.password = password;
         }

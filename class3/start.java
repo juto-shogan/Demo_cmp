@@ -1,20 +1,19 @@
 package class3;
 
-import class3.person.Staff;
-import class3.person.Student;
+import class3.person.Student.Staff;
 import class3.CMP202;
 
 public class start {
     public static void main (String [] args){
 
-        CMP202 CMP202 = new CMP202()
+        CMP202 CMP202 = new CMP202();
         CMP202.printUserDetails();
 
         person person = new person();
 
-        Student student = new Student("Bingham", "somto", "654321", "BHU/22/04/09/0027");
+        person Student = new Student("Bingham", "somto", "654321", "BHU/22/04/09/0027");
         
-        Staff staff = new Staff("Bingham", "abu", "654321", 667);
+        person Staff = new Staff("Bingham", "abu", "654321", 667);
 
 
 
