@@ -1,0 +1,6 @@
+## algorithm
+
+##Get the word 
+##Convert the word to lowercase
+##check if it is the same when reversed
+##Count the number of characters that are the same
